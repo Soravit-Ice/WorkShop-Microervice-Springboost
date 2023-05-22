@@ -30,3 +30,13 @@ Build image
 
         docker compose down <*shut down*>
 
+## Docker Swarm
+1. Create Custer
+
+        docker swarm init
+        docker node ls
+2 Deploy
+
+      docker stack deploy --compose-file docker-compose-deploy.yml dev
+      docker stack ls
+      docker service ls
