@@ -17,4 +17,16 @@ Build image
 
         docker image build -t springdemo2:2.0 -f Dockerfile_multi_stage .
 
+## Docker compose 
+1. Create file `docker-compose.yml` 
+2. Build image
+
+        docker compose build
+3. Run Container
+
+        docker compose up -d
+        docker compose ps <*list all container running*>
+4. Remove all containers
+
+        docker compose down <*shut down*>
 

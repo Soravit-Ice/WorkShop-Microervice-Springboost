@@ -1,0 +1,9 @@
+version: "3"
+services:
+  service1:
+    build:
+      context: ../workshopspring
+      dockerfile: Dockerfile_multi_stage
+    image: soravitice/spring:2.0
+    ports:
+      - "8888:8080"
