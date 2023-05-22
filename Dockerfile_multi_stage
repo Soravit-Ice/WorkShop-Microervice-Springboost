@@ -1,0 +1,11 @@
+FROM eclipse-temurin:17.0.7_7-jdk-focal as step1
+WORKDIR /app
+COPY . .
+#RUN --mount=type=cache,target=/root/.m2 , rw ./mvnw package using cache Improve build time
+RUN ./mvnw package
+
+
+FROM eclipse-temurin:17.0.1_12-jre-focal
+WORKDIR /abc
+COPY --from=step1 /app/target/workshopspring-0.0.1-SNAPSHOT.jar ./test.jar
+CMD ["java" , "-jar" , "test.jar"]

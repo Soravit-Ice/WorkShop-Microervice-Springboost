@@ -12,3 +12,9 @@ Create Container
         docker container run -d -p 9999:8080 spring:1.0
         * run on port 9999 call container port 8080 *
 
+## Build Docker Multi Stage Image
+Build image
+
+        docker image build -t springdemo2:2.0 -f Dockerfile_multi_stage .
+
+
