@@ -39,13 +39,13 @@ Build image
 
         docker swarm init
         docker node ls
+
 2. Deploy
 
-
+   
       docker stack deploy --compose-file docker-compose-deploy.yml dev
       docker stack ls
       docker service ls
-
 
 ## Scaling
 
