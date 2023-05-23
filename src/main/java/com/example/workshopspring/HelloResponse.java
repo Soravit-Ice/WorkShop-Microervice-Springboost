@@ -3,8 +3,8 @@ package com.example.workshopspring;
 public class HelloResponse {
     private String message;
 
-    public HelloResponse(String message) {
-        this.message = "Hello " + message;
+    public HelloResponse(String message ) {
+        this.message = "Hello " + message ;
     }
 
     public String getMessage() {

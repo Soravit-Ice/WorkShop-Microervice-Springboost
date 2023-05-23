@@ -45,3 +45,12 @@ Build image
 ## Scaling
 
       docker service scale dev_service1=5
+
+## When change Code frontend using Nginx Docker Volume
+      
+      docker image pull nginx:1.23.4
+      docker container run -d -p 9999:80 nginx:1.23.4
+
+Assume create demo.html
+
+      docker container run -d -p 9998:80 -v $(pwd)/demo.html:/usr/share/nginx/html/demo.html nginx:1.23.4
