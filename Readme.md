@@ -30,6 +30,10 @@ Build image
 
         docker compose down <*shut down*>
 
+## Push to Docker Hub
+      docker image tag demo:2.0 soravit/spring:2.0
+      docker login 
+      docker push soravit/spring:2.0
 ## Docker Swarm
 1. Create Custer
 
