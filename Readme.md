@@ -46,6 +46,7 @@ Build image
       docker stack ls
       docker service ls
 
+![img.png](img.png)
 ## Scaling
 
       docker service scale dev_service1=5
