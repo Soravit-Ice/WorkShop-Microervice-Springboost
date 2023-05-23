@@ -3,6 +3,9 @@ package com.example.workshopspring;
 public class HelloResponse {
     private String message;
 
+    public HelloResponse() {
+    }
+
     public HelloResponse(String message ) {
         this.message = "Hello " + message ;
     }
